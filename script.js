@@ -2,7 +2,7 @@
  * Lógica da animação de digitação (Typewriter)
  */
 const textElement = document.getElementById('typing-text');
-const phrases = ["Desenvolvedor Front-End", "Estudante de Programação","Foco em Interfaces Modernas e Responsivas"];
+const phrases = ["Desenvolvedor Web", "Estudante de Programação","Foco em Full Stack"];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
