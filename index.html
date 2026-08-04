@@ -1,201 +1,262 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atawan Cazetta Desenvolvedor</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criação de Sites em Santo Anastácio SP | 1NK Digital</title>
+  <meta name="description" content="Criação de sites em Santo Anastácio SP para empresas. Sites rápidos, responsivos, landing pages e SEO local. Solicite seu orçamento à 1NK Digital.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="1NK Digital">
+  <meta name="theme-color" content="#071d35">
+  <link rel="canonical" href="https://1nkdigital.com.br/">
+  <link rel="icon" type="image/png" href="assets/img-logo.png">
+  <link rel="apple-touch-icon" href="assets/img-logo.png">
+
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Criação de Sites em Santo Anastácio SP | 1NK Digital">
+  <meta property="og:description" content="Sites profissionais, rápidos e preparados para o Google. Atendemos empresas de Santo Anastácio e região.">
+  <meta property="og:url" content="https://1nkdigital.com.br/">
+  <meta property="og:site_name" content="1NK Digital">
+  <meta property="og:image" content="https://1nkdigital.com.br/assets/img-banner.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1983">
+  <meta property="og:image:height" content="793">
+  <meta property="og:image:alt" content="1NK Digital - Desenvolvimento Web">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Criação de Sites em Santo Anastácio SP | 1NK Digital">
+  <meta name="twitter:description" content="Sites profissionais, rápidos e preparados para o Google em Santo Anastácio e região.">
+  <meta name="twitter:image" content="https://1nkdigital.com.br/assets/img-banner.jpg">
+  <meta name="twitter:image:alt" content="1NK Digital - Desenvolvimento Web">
+
+  <link rel="preload" href="assets/img-banner.jpg" as="image" type="image/jpeg" fetchpriority="high">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://1nkdigital.com.br/#empresa",
+    "name": "1NK Digital",
+    "url": "https://1nkdigital.com.br/",
+    "logo": "https://1nkdigital.com.br/assets/img-logo.png",
+    "image": "https://1nkdigital.com.br/assets/img-banner.jpg",
+    "description": "Empresa de criação de sites em Santo Anastácio - SP especializada em sites profissionais, landing pages, SEO local e otimização de performance.",
+    "telephone": "+55-18-98179-0178",
+    "email": "1nkdigital@gmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santo Anastácio",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Santo Anastácio"},
+      {"@type": "City", "name": "Presidente Prudente"},
+      {"@type": "AdministrativeArea", "name": "Oeste Paulista"},
+      {"@type": "Country", "name": "Brasil"}
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-18-98179-0178",
+      "contactType": "sales",
+      "areaServed": "BR",
+      "availableLanguage": "Portuguese"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços de desenvolvimento web",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Criação de sites para empresas"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Criação de landing pages"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO local"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Otimização de performance web"}}
+      ]
+    },
+    "knowsAbout": ["Criação de sites", "Desenvolvimento web", "Landing pages", "SEO local", "UX/UI", "Performance web"]
+  }
+  </script>
 </head>
-<body>
-    <!-- MENU DE NAVEGAÇÃO -->
-    <nav>
-        <div class="logo"><span>&lt;/&gt; Atawan Cazetta <strong>Desenvolvedor</strong></span></div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#atuacao">Atuação</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+<body id="inicio">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-    <!-- SEÇÃO PRINCIPAL (HERO) -->
-    <header id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h2><span>&ndash;&ndash;</span> OLÁ, EU SOU</h2>
-                <h1>Atawan Santos Cazetta</h1>
-                <h3><span id="typing-text"></span><span class="cursor">|</span></h3>
-                <div class="hero-btns">
-                    <a href="https://www.linkedin.com/in/atawan-cazetta-7b5992371" target="_blank" rel="noopener" class="btn-primary">Acesse meu Linkedin <i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/atawancazetta" target="_blank" rel="noopener" class="btn-secondary">Acesse meu GitHub <i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <img src="./imagens/img-perfil.jpeg" alt="Atawan Cazetta" class="profile-pic">
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="nav-wrap container">
+      <a class="brand" href="#inicio" aria-label="1NK Digital - início">
+        <img src="assets/img-logo.png" alt="Logo da 1NK Digital, empresa de criação de sites em Santo Anastácio" width="500" height="500">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="main-nav" aria-label="Navegação principal">
+        <a href="#sobre">A 1NK</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Projetos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="button button-small nav-cta" href="https://wa.me/5518981790178?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%201NK%20Digital%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
+        Solicitar orçamento
+      </a>
+    </div>
+  </header>
 
-    <!-- SOBRE MIM -->
-    <section id="sobre" class="about-section">
-    
-        <div class="about-text">
-            <h1>Sobre mim</h1>
-            <p>Minha trajetória na tecnologia começou na área de redes, onde me formei e atuo como suporte técnico em um provedor de internet. No dia a dia, lido com infraestrutura, diagnóstico de problemas, atendimento a clientes e análise de redes — o que me deu uma base sólida em lógica, resolução de problemas e pensamento técnico.<br><br>
-Com o tempo, comecei a ir além do suporte e me interessei cada vez mais por desenvolvimento. Percebi que não queria apenas resolver problemas existentes, mas também criar soluções. Foi aí que iniciei minha transição para a programação.<br><br>
-Hoje, estou direcionando minha carreira para o desenvolvimento, aplicando na prática a mesma mentalidade analítica que já utilizo em redes. Tenho evoluído na construção de projetos, buscando escrever códigos organizados, funcionais e com foco em soluções reais.<br><br>
-A experiência com redes me trouxe uma visão diferenciada, principalmente em como sistemas funcionam na prática, o que impacta diretamente na forma como desenvolvo. Estou em constante evolução, unindo minha base técnica com programação para construir uma carreira sólida como desenvolvedor.</p>
-            <a href="curriculo.pdf" target="_blank" class="btn-primary">Download Curriculo <i class="fa-solid fa-download"></i></a>
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><i></i> Desenvolvimento web em Santo Anastácio - SP</span>
+          <h1 id="hero-title">Criação de sites em Santo Anastácio para empresas que querem <span>crescer.</span></h1>
+          <p>A 1NK Digital desenvolve sites profissionais, rápidos, responsivos e preparados para o Google. Transformamos a presença digital de empresas de Santo Anastácio e região em uma ferramenta para atrair clientes e gerar oportunidades.</p>
+          <div class="hero-actions">
+            <a class="button" href="https://wa.me/5518981790178?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%201NK%20Digital%20e%20quero%20um%20site%20profissional." target="_blank" rel="noopener noreferrer">
+              <span class="wa-icon" aria-hidden="true">●</span> Falar com um especialista
+            </a>
+            <a class="text-link" href="#portfolio">Conheça nossos projetos <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="hero-checks" aria-label="Diferenciais">
+            <li>Design 100% responsivo</li>
+            <li>SEO local estratégico</li>
+            <li>Atendimento regional</li>
+          </ul>
         </div>
+      </div>
+      <div class="trust-strip">
+        <div class="container">
+          <span>Estratégia</span><i></i><span>Design</span><i></i><span>Tecnologia</span><i></i><span>Resultado</span>
+        </div>
+      </div>
     </section>
 
-    <!-- SKILLS / HABILIDADES -->
-    <section id="skills" class="skills-section">
-        <h1>My Skills</h1>
-        <div class="skills-container">
-            <ul class="skills-list">
-                <li><span>Lógica de Programação</span> <div class="progress"><div class="bar" style="width: 100%"></div></div> 100%</li>
-                <li><span>HTML</span> <div class="progress"><div class="bar" style="width: 100%"></div></div> 100%</li>
-                <li><span>CSS</span> <div class="progress"><div class="bar" style="width: 100%"></div></div> 100%</li>
-                <li><span>JavaScript</span> <div class="progress"><div class="bar" style="width: 100%"></div></div> 100%</li>
-                <li><span>Wordpress</span> <div class="progress"><div class="bar" style="width: 100%"></div></div> 100%</li>
-                <li><span>Elementor</span> <div class="progress"><div class="bar" style="width: 100%"></div></div> 100%</li>
-                <li><span>Git/GitHub</span> <div class="progress"><div class="bar" style="width: 100%"></div></div> 100%</li>
-                <li><span>Engenharia de Prompt com IA</span> <div class="progress"><div class="bar" style="width: 100%"></div></div> 100%</li>
-            </ul>
-            <ul class="stats-list">
-                <li><strong>+10</strong> <p>Sites Feitos</p></li>
-                <li><strong>+10</strong> <p>Certificados</p></li>
-                <li><strong>+10</strong> <p>Projetos Feitos</p></li>
-                <li><strong>+1</strong> <p>Anos de Experiência Prática</p></li>
-            </ul>
+    <section class="about section" id="sobre" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-intro reveal">
+          <span class="eyebrow dark"><i></i> Sobre a 1NK Digital</span>
+          <h2 id="about-title">Empresa de criação de sites em Santo Anastácio que entende <span>seu negócio.</span></h2>
         </div>
+        <div class="about-content reveal">
+          <p class="lead">Atuamos na criação de sites na região de Santo Anastácio para empresas que precisam de uma presença digital profissional, moderna e fácil de encontrar.</p>
+          <p>A 1NK Digital une estratégia, experiência do usuário e tecnologia na criação de sites para empresas. Cada projeto é desenvolvido para apresentar seu negócio com credibilidade, carregar rapidamente e facilitar o contato de pessoas que já procuram seus produtos ou serviços na região.</p>
+          <div class="about-points">
+            <div><strong>Estratégia para o mercado local</strong><span>Entendemos seu negócio, seu público e sua região.</span></div>
+            <div><strong>Design focado em conversão</strong><span>Cada elemento facilita a decisão e o contato.</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- PORTFÓLIO -->
-    <section id="projetos" class="portfolio-section">
-        <h2>Veja alguns projetos recentes</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <a href="https://atawancazetta.github.io/agregador-de-links-devlinks/" target="_blank">
-                    <img src="./imagens/img-devlinks.jpg" alt="Projeto DevLinks">
-                </a>
-                <div class="portfolio-info">
-                    <h3>DevLinks</h3>
-                    <p>Agregador de links para cartão de visitas online, com interface moderna e responsiva.</p>
-                    <div class="tech-tags">
-                        <span>HTML/CSS</span><span>JavaScript</span><span>Git</span><span>Figma</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <a href="https://atawancazetta.github.io/Projeto-ClipMaker-NLW/" target="_blank">
-                    <img src="./imagens/img-clipmaker.png" alt="Projeto ClipMaker">
-                </a>
-                <div class="portfolio-info">
-                    <h3>ClipMaker</h3>
-                    <p>Web experimental com IA para identificar e cortar momentos virais em vídeos automaticamente.</p>
-                    <div class="tech-tags">
-                        <span>Gemini AI</span><span>Tailwind</span><span>GSAP</span><span>Cloudinary</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <a href="jogodavelha-ten-omega.vercel.app" target="_blank">
-                    <img src="./imagens/img-jogodavelha.jpeg" alt="Projeto Jogo da Velha">
-                </a>
-                <div class="portfolio-info">
-                    <h3>Jogo da Velha</h3>
-                    <p>Um jogo clássico da velha implementado em HTML, CSS e JavaScript.</p>
-                    <div class="tech-tags">
-                        <span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>Firebase</span><span>SQLite</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <a href="https://github.com/atawancazetta/landing-page-imobiliaria" target="_blank">
-                    <img src="./imagens/img-imobiliaria.png" alt="Projeto Imobiliaria">
-                </a>
-                <div class="portfolio-info">
-                    <h3>Landing page Imobiliaria</h3>
-                    <p>Uma landing page para uma imobiliária, com interface moderna e responsiva.</p>
-                    <div class="tech-tags">
-                        <span>HTML/CSS</span><span>JavaScript</span><span>Swiper.js</span><span>Font Awesome</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <a href="https://grupogoncalves.vercel.app/" target="_blank">
-                    <img src="./imagens/img-vendadefeno.jpeg" alt="Projeto Site Grupo Gonçalves">
-                </a>
-                <div class="portfolio-info">
-                    <h3>Site Grupo Gonçalves</h3>
-                    <p>Uma landing page para apresentar a empresa e facilitar a comercialização de feno de alta performance.</p>
-                    <div class="tech-tags">
-                        <span>HTML/CSS</span><span>JavaScript</span><span>Font Awesome</span><span>Google Fonts</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <a href="https://tabapuasaf.vercel.app/" target="_blank">
-                    <img src="./imagens/img-pecuaria.jpeg" alt="Projeto Pecuaria Tabapuã Saf">
-                </a>
-                <div class="portfolio-info">
-                    <h3>Landing Page Tabapuã Saf</h3>
-                    <p>Uma landing page institucional focada na divulgação e detalhes das raças de gado Tabanel e Tabapuã.</p>
-                    <div class="tech-tags">
-                        <span>HTML/CSS</span><span>JavaScript</span><span>Git</span><span>Figma</span>
-                    </div>
-                </div>
-            </div>
+    <section class="services section" id="servicos" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="eyebrow"><i></i> Soluções digitais para empresas</span><h2 id="services-title">Criação de sites e soluções digitais em <span>Santo Anastácio - SP.</span></h2></div>
+          <p>Da estratégia à publicação, entregamos desenvolvimento web completo para empresas de Santo Anastácio e cidades da região.</p>
         </div>
-        
-    </section>
-
-    <!-- SERVIÇOS -->
-    <section id="atuacao" class="services-section">
-        <h1>Atuação</h1>
         <div class="services-grid">
-            <div class="service-card"><i class="fa-solid fa-code"></i><h1>Criação de Sites</h1><p>Desenvolvimento de sites e landing pages personalizados para destacar sua marca e atrair clientes.</p></div>
-            <div class="service-card"><i class="fa-solid fa-screwdriver-wrench"></i><h1>Manutenção e Atualização de Sites</h1><p>Atualização de conteúdos, melhorias de performance e pequenas implementações de funcionalidades.</p></div>
-            <div class="service-card"><i class="fa-solid fa-gauge-high"></i><h1>Otimização de Site</h1><p>Melhore a velocidade e a performance do seu site com otimizações técnicas, garantindo uma navegação rápida e eficiente.</p></div>
-           
+          <article class="service-card reveal"><span class="service-number">01</span><div class="service-icon">⌨</div><h3>Desenvolvimento de sites em Santo Anastácio</h3><p>Sites institucionais personalizados para comunicar valor, fortalecer sua empresa e gerar contatos de clientes da cidade e região.</p><a href="#contato">Quero um site <span>→</span></a></article>
+          <article class="service-card featured reveal"><span class="service-number">02</span><div class="service-icon">↗</div><h3>Criação de landing pages</h3><p>Páginas rápidas e persuasivas para campanhas, lançamentos e serviços, com mensagens e chamadas focadas em conversão.</p><a href="#contato">Quero converter mais <span>→</span></a></article>
+          <article class="service-card reveal"><span class="service-number">03</span><div class="service-icon">◎</div><h3>SEO local em Santo Anastácio</h3><p>Conteúdo e estrutura técnica para aumentar as chances de sua empresa aparecer nas pesquisas locais do Google.</p><a href="#contato">Quero aparecer no Google <span>→</span></a></article>
+          <article class="service-card reveal"><span class="service-number">04</span><div class="service-icon">▱</div><h3>Sites responsivos para todos os dispositivos</h3><p>Experiência consistente e profissional em celulares, tablets, notebooks e computadores, sem perder qualidade.</p><a href="#contato">Saiba mais <span>→</span></a></article>
+          <article class="service-card reveal"><span class="service-number">05</span><div class="service-icon">⚡</div><h3>Otimização de velocidade e performance</h3><p>Sites leves para reduzir abandonos, melhorar a experiência do visitante e contribuir para o posicionamento no Google.</p><a href="#contato">Acelerar meu site <span>→</span></a></article>
+          <article class="service-card reveal"><span class="service-number">06</span><div class="service-icon">⟳</div><h3>Manutenção e melhorias de sites</h3><p>Atualizações e melhorias contínuas para seu site acompanhar as necessidades e o crescimento da empresa.</p><a href="#contato">Cuidar do meu site <span>→</span></a></article>
         </div>
-        
+      </div>
     </section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="contact-section">
-        <h1>Entre em Contato</h1>
-        <p>Entre em contato comigo através das opções abaixo:</p>
-        <div class="contact-container">
-            <a href="https://wa.me/5518981790178" target="_blank" class="contact-item">
-                <i class="fa-brands fa-whatsapp"></i>
-                <p>Whatsapp<br>(18)98179-0178</p>
-            </a>
-            <a href="mailto:atawan.s.c@hotmail.com" class="contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <p>E-mail<br>atawan.s.c@hotmail.com</p>
-            </a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Santo+Anastácio+-+SP" target="_blank" class="contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Localização<br>Santo Anastácio - SP, Brasil</p>
-            </a>
+    <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-heading light reveal">
+          <div><span class="eyebrow"><i></i> Projetos selecionados</span><h2 id="portfolio-title">Sites profissionais desenvolvidos para <span>empresas.</span></h2></div>
+          <p>Projetos reais que unem identidade, clareza e desempenho para empresas de diferentes segmentos.</p>
         </div>
-        <div class="social-media">
-            <p><strong>Ou me siga nas Redes Sociais</strong></p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/atawan-cazetta-7b5992371?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+        <div class="project-carousel reveal" role="region" aria-roledescription="carrossel" aria-label="Projetos da 1NK Digital">
+          <div class="projects" id="project-track" aria-live="off">
+          <article class="project-card">
+            <a class="project-image" href="https://grupogoncalves.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar projeto Grupo Gonçalves"><picture><source media="(max-width: 760px)" srcset="assets/img-grupo-goncalves-mobile.jpg"><img src="assets/img-grupo-goncalves.jpg" alt="Página inicial do site profissional criado pela 1NK Digital para o Grupo Gonçalves" width="1600" height="900" loading="lazy" decoding="async"></picture></a>
+            <div class="project-info"><span>Site institucional</span><h3>Grupo Gonçalves</h3><p>Presença digital para o agronegócio, apresentando produtos e facilitando o contato comercial.</p><a class="project-button" href="https://grupogoncalves.vercel.app/" target="_blank" rel="noopener noreferrer">Visualizar projeto <b>↗</b></a></div>
+          </article>
+          <article class="project-card">
+            <a class="project-image" href="https://tabapuasaf.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar projeto Tabapuã SAF"><picture><source media="(max-width: 760px)" srcset="assets/img-tabapua-saf-mobile.jpg"><img src="assets/img-tabapua-saf.jpg" alt="Página inicial da landing page criada pela 1NK Digital para a Tabapuã SAF" width="1600" height="900" loading="lazy" decoding="async"></picture></a>
+            <div class="project-info"><span>Landing page</span><h3>Tabapuã SAF</h3><p>Experiência imersiva criada para apresentar genética de excelência e reforçar a autoridade da marca.</p><a class="project-button" href="https://tabapuasaf.vercel.app/" target="_blank" rel="noopener noreferrer">Visualizar projeto <b>↗</b></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-image"><picture><source media="(max-width: 760px)" srcset="assets/img-perfumaria-mavi-mobile.jpg"><img src="assets/img-perfumaria-mavi.jpg" alt="Página inicial do catálogo digital desenvolvido pela 1NK Digital para a Perfumaria Mavi" width="1600" height="900" loading="lazy" decoding="async"></picture></div>
+            <div class="project-info"><span>Catálogo digital</span><h3>Perfumaria Mavi</h3><p>Vitrine digital sofisticada e intuitiva, criada para valorizar os produtos e aproximar a marca de seus clientes.</p><a class="project-button" href="https://perfumariamavi.vercel.app/" target="_blank" rel="noopener noreferrer">Visualizar projeto <b>↗</b></a></div>
+          </article>
+          </div>
+          <button class="carousel-side-arrow carousel-side-prev" type="button" aria-label="Ver projeto anterior">←</button>
+          <button class="carousel-side-arrow carousel-side-next" type="button" aria-label="Ver próximo projeto">→</button>
+          <button class="carousel-toggle" type="button" aria-pressed="false" aria-label="Pausar rotação automática dos projetos">Pausar</button>
+          <p class="sr-only" id="carousel-status" aria-live="polite" aria-atomic="true"></p>
         </div>
+      </div>
     </section>
 
-<footer><p>&#169; 2026 Atawan Cazetta</p></footer>
+    <section class="benefits section" id="beneficios" aria-labelledby="benefits-title">
+      <div class="container benefits-grid">
+        <div class="benefits-copy reveal">
+          <span class="eyebrow dark"><i></i> Por que investir</span>
+          <h2 id="benefits-title">Por que sua empresa precisa de um <span>site profissional?</span></h2>
+          <p>Enquanto você cuida do negócio, seu site apresenta diferenciais, responde dúvidas e aproxima sua empresa de novos clientes em Santo Anastácio e região.</p>
+          <a class="text-link dark-link" href="#contato">Comece agora <span>↗</span></a>
+        </div>
+        <div class="benefit-list">
+          <article class="reveal"><span>01</span><div><h3>Mais credibilidade</h3><p>Uma apresentação profissional gera confiança antes mesmo do primeiro contato.</p></div></article>
+          <article class="reveal"><span>02</span><div><h3>Seja encontrado no Google</h3><p>Alcance pessoas que pesquisam produtos e serviços em Santo Anastácio e cidades próximas.</p></div></article>
+          <article class="reveal"><span>03</span><div><h3>Atraia novos clientes</h3><p>Transforme acessos em conversas com caminhos de contato objetivos.</p></div></article>
+          <article class="reveal"><span>04</span><div><h3>Esteja em todas as telas</h3><p>Funcione perfeitamente em celular, tablet, notebook e computador.</p></div></article>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="testimonials section" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><span class="eyebrow"><i></i> Relacionamento próximo</span><h2 id="testimonials-title">Projetos web construídos com parceria e <span>resultado.</span></h2></div><p>Atendimento transparente e desenvolvimento alinhado aos objetivos de cada empresa.</p></div>
+        <div class="testimonial-grid">
+          <article class="quote-card reveal"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><blockquote>“A 1NK Digital desenvolveu um site moderno, rápido e muito profissional para nossa empresa. O atendimento foi excelente e o resultado superou nossas expectativas. Recomendo para qualquer empresa que queira fortalecer sua presença digital.”</blockquote><div class="client"><span>VG</span><div><strong>Vinícius Gonçalves</strong><small>CEO do Grupo Gonçalves</small></div></div></article>
+          <article class="quote-card reveal"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><blockquote>“Fiquei muito satisfeito com o trabalho realizado. O site ficou bonito, responsivo e transmite exatamente a imagem que queríamos para o nosso projeto. A 1NK Digital demonstrou profissionalismo em todas as etapas.”</blockquote><div class="client"><span>SF</span><div><strong>Severino A. Filho</strong><small>Proprietário pecuarista da Tabapuã SAF</small></div></div></article>
+          <article class="quote-card reveal"><div class="stars" aria-label="5 de 5 estrelas">★★★★★</div><blockquote>“A 1NK Digital entregou um site moderno, profissional e totalmente alinhado com a identidade da nossa empresa. O atendimento foi excelente durante todo o desenvolvimento e o resultado ficou acima das nossas expectativas. Recomendo o trabalho pela qualidade, dedicação e profissionalismo.”</blockquote><div class="client"><span>TS</span><div><strong>Taynara Ap. Santos</strong><small>Empreendedora da Perfumaria Mavi</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contato" aria-labelledby="contact-title">
+      <div class="container contact-shell">
+        <div class="contact-copy reveal">
+          <span class="eyebrow"><i></i> Atendimento em Santo Anastácio e região</span>
+          <h2 id="contact-title">Solicite um orçamento para criação de site em <span>Santo Anastácio.</span></h2>
+          <p>Conte o que sua empresa precisa. A 1NK Digital pode desenvolver um site profissional, uma landing page ou uma estratégia de SEO local para aproximar seu negócio de novos clientes.</p>
+          <a class="direct-contact" href="https://wa.me/5518981790178" target="_blank" rel="noopener noreferrer"><span class="contact-icon">●</span><div><small>Atendimento rápido e direto</small><strong>Solicitar orçamento pelo WhatsApp</strong></div><b>↗</b></a>
+          <div class="location"><span>⌖</span><div><small>Atendimento</small><strong>Santo Anastácio - SP e todo o Brasil</strong></div></div>
+        </div>
+        <form class="contact-form reveal" id="lead-form" aria-labelledby="form-title">
+          <div class="form-heading"><span id="form-title">Solicite seu orçamento</span><small>Retornamos o mais breve possível.</small></div>
+          <label>Seu nome<input type="text" name="nome" placeholder="Como podemos te chamar?" autocomplete="name" required></label>
+          <label>WhatsApp<input type="tel" name="telefone" placeholder="(18) 99999-9999" autocomplete="tel" required></label>
+          <label>Qual serviço você procura?
+            <select name="servico" required><option value="" disabled selected>Selecione uma opção</option><option>Site profissional</option><option>Landing page</option><option>SEO local</option><option>Otimização e performance</option><option>Manutenção e melhorias</option><option>Outro serviço</option></select>
+          </label>
+          <label>Conte sobre seu projeto<textarea name="mensagem" rows="4" placeholder="O que você gostaria de criar?"></textarea></label>
+          <button class="button form-button" type="submit">Enviar solicitação <span>→</span></button>
+          <small class="privacy">Ao enviar, você será direcionado ao WhatsApp da 1NK Digital.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><img src="assets/img-logo.png" alt="Logo da 1NK Digital, desenvolvimento web em Santo Anastácio SP" width="500" height="500" loading="lazy"><p>Criação de sites em Santo Anastácio.<br>Experiências que convertem.</p></div>
+      <div class="footer-links"><strong>Navegação</strong><a href="#sobre">A 1NK</a><a href="#servicos">Serviços</a><a href="#portfolio">Projetos</a><a href="#contato">Contato</a></div>
+      <div class="footer-links"><strong>Serviços</strong><a href="#servicos">Criação de sites</a><a href="#servicos">Landing pages</a><a href="#servicos">SEO local</a><a href="#servicos">Performance</a></div>
+      <div class="footer-links"><strong>Contato</strong><a href="mailto:1nkdigital@gmail.com">1nkdigital@gmail.com</a><span>Santo Anastácio - SP</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year">2026</span> 1NK Digital. Todos os direitos reservados.</span><a href="#inicio">Voltar ao topo ↑</a></div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5518981790178?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%201NK%20Digital." target="_blank" rel="noopener noreferrer" aria-label="Falar com a 1NK Digital pelo WhatsApp"><span class="whatsapp-mark" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 7.021 2.91 9.825 9.825 0 0 1 2.897 7.025c-.002 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></span><span class="whatsapp-label" aria-hidden="true">Fale conosco</span></a>
+  <script src="script.js" defer></script>
 </body>
 </html>
