@@ -135,7 +135,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .carousel-side-arrow:hover,.carousel-side-arrow:focus-visible{opacity:.88;background:rgba(3,27,48,.68);color:#fff;border-color:rgba(9,185,208,.35);outline:none}
 .carousel-side-prev:hover,.carousel-side-prev:focus-visible{transform:translate(-2px,-50%)}
 .carousel-side-next:hover,.carousel-side-next:focus-visible{transform:translate(2px,-50%)}
-.carousel-toggle{position:absolute;z-index:5;right:14px;top:14px;min-height:42px;padding:0 14px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(2,20,37,.7);color:#fff;font-size:.68rem;font-weight:800;backdrop-filter:blur(8px)}
 
 @media (max-width:760px){
   .project-carousel{width:calc(100% - 68px)}
@@ -280,7 +279,7 @@ html{scroll-padding-top:120px}
 }
 
 @media (forced-colors:active){
-  .button,.project-button,.carousel-side-arrow,.carousel-toggle{border:1px solid ButtonText}
+  .button,.project-button,.carousel-side-arrow{border:1px solid ButtonText}
 }
 
 /* Assets otimizados para produção */

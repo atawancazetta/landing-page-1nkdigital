@@ -86,11 +86,9 @@ if (carouselTrack) {
   const carousel = carouselTrack.closest('.project-carousel');
   const previousButton = carousel.querySelector('.carousel-side-prev');
   const nextButton = carousel.querySelector('.carousel-side-next');
-  const toggleButton = carousel.querySelector('.carousel-toggle');
   const carouselStatus = document.getElementById('carousel-status');
   let autoplayTimer;
   let scrollEndTimer;
-  let autoplayPaused = false;
   const autoplayDelay = 4500;
 
   slides.forEach((slide, index) => {
@@ -144,7 +142,7 @@ if (carouselTrack) {
   const stopAutoplay = () => window.clearInterval(autoplayTimer);
   const startAutoplay = () => {
     stopAutoplay();
-    if (autoplayPaused || document.hidden || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (document.hidden || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     autoplayTimer = window.setInterval(() => moveCarousel(1), autoplayDelay);
   };
 
@@ -160,14 +158,6 @@ if (carouselTrack) {
   nextButton.addEventListener('click', () => {
     moveCarousel(1);
     restartAutoplay();
-  });
-  toggleButton.addEventListener('click', () => {
-    autoplayPaused = !autoplayPaused;
-    toggleButton.setAttribute('aria-pressed', String(autoplayPaused));
-    toggleButton.setAttribute('aria-label', autoplayPaused ? 'Retomar rotação automática dos projetos' : 'Pausar rotação automática dos projetos');
-    toggleButton.textContent = autoplayPaused ? 'Retomar' : 'Pausar';
-    if (autoplayPaused) stopAutoplay();
-    else startAutoplay();
   });
 
   carouselTrack.addEventListener('scroll', () => {
