@@ -63,6 +63,18 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach((section) => sectionObserver.observe(section));
 
+const serviceCards = [...document.querySelectorAll('.service-card')];
+
+serviceCards.forEach((card) => {
+  card.addEventListener('click', (event) => {
+    if (event.target.closest('a')) return;
+
+    const wasSelected = card.classList.contains('featured') || card.classList.contains('is-selected');
+    serviceCards.forEach((item) => item.classList.remove('featured', 'is-selected'));
+    if (!wasSelected) card.classList.add('is-selected');
+  });
+});
+
 document.getElementById('lead-form')?.addEventListener('submit', (event) => {
   event.preventDefault();
   const data = new FormData(event.currentTarget);
