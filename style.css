@@ -178,9 +178,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .whatsapp-float.is-expanded{width:158px;padding:0 17px 0 7px;gap:9px;border-radius:999px;animation-play-state:paused}
 .whatsapp-float.is-expanded .whatsapp-mark{width:42px;height:42px;flex:0 0 42px}
 .whatsapp-float.is-expanded .whatsapp-label{max-width:90px;opacity:1;transform:none}
-.whatsapp-float:hover,.whatsapp-float:focus-visible{width:158px;padding:0 17px 0 7px;gap:9px;border-radius:999px}
-.whatsapp-float:hover .whatsapp-mark,.whatsapp-float:focus-visible .whatsapp-mark{position:static;width:42px;height:42px;flex:0 0 42px}
-.whatsapp-float:hover .whatsapp-label,.whatsapp-float:focus-visible .whatsapp-label{max-width:90px;opacity:1;transform:none}
+@media (hover:hover) and (pointer:fine){
+  .whatsapp-float:hover{width:158px;padding:0 17px 0 7px;gap:9px;border-radius:999px}
+  .whatsapp-float:hover .whatsapp-mark{position:static;width:42px;height:42px;flex:0 0 42px}
+  .whatsapp-float:hover .whatsapp-label{max-width:90px;opacity:1;transform:none}
+}
+
+@media (hover:none),(pointer:coarse){
+  .whatsapp-float,.whatsapp-float.is-expanded{width:56px;height:56px;padding:0;gap:0;border-radius:50%}
+  .whatsapp-float .whatsapp-mark,.whatsapp-float.is-expanded .whatsapp-mark{position:absolute;inset:0;width:56px;height:56px;flex:none}
+  .whatsapp-float .whatsapp-label,.whatsapp-float.is-expanded .whatsapp-label{max-width:0;opacity:0;transform:translateX(5px)}
+}
 
 /* Logo e navbar com maior presença de marca */
 html{scroll-padding-top:108px}
